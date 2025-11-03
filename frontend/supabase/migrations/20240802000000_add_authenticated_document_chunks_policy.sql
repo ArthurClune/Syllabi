@@ -1,4 +1,4 @@
-// Create the policy for authenticated users to read document_chunks for public and shared chatbots
+-- Create the policy for authenticated users to read document_chunks for public and shared chatbots
 CREATE POLICY "Allow authenticated access to document_chunks for public and shared chatbots"
 ON public.document_chunks
 AS PERMISSIVE
