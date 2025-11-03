@@ -350,7 +350,7 @@ export function EnhancedCodeBlock({
       else if (extension === 'xlsx') mimeType = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet';
       // ---------------------------------------------
 
-      const blob = new Blob([fileData], { type: mimeType });
+      const blob = new Blob([new Uint8Array(fileData)], { type: mimeType });
       const url = URL.createObjectURL(blob);
       const link = document.createElement('a');
       link.href = url;
