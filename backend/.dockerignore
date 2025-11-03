@@ -58,6 +58,8 @@ docs/
 *.md
 *.bat
 *.sh
+!start.sh
+!start-worker.sh
 logs/
 temp/
 tmp/
